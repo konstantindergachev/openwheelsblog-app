@@ -4,7 +4,10 @@
   "description": "A simple search application in Node and Express hosted on Heroku",
   "main": "app/server.js",
   "author": "Konstantin Dergachev",
-  "keywords": [ "blog", "formula" ],
+  "keywords": [
+    "blog",
+    "formula"
+  ],
   "license": "MIT",
   "scripts": {
     "grab": "node app/server/graber/graber.js",
@@ -27,6 +30,7 @@
     "express-messages": "^1.0.1",
     "express-session": "^1.17.0",
     "express-validator": "^4.3.0",
+    "memorystore": "^1.6.1",
     "mongoose": "^5.8.11",
     "mongoose-lifecycle": "^1.0.0",
     "node-sass": "^4.11.0",

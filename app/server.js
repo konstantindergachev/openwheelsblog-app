@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const expressValidator = require('express-validator');
 const session = require('express-session');
+const MemoryStore = require('memorystore')(session);
 const flash = require('connect-flash');
 const passport = require('passport');
 const mongoose = require('mongoose');
@@ -31,6 +32,10 @@ app.use(
     secret: 'secret',
     saveUninitialized: true,
     resave: true,
+    cookie: { maxAge: 86400000 },
+    store: new MemoryStore({
+      checkPeriod: 86400000, // prune expired entries every 24h
+    }),
   })
 );
 
