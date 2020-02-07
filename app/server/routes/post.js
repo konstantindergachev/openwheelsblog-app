@@ -6,7 +6,7 @@ const fileUpload = require('express-fileupload');
 const BlogPost = require('../models/post-model');
 const Comment = require('../models/comment-model');
 const banner = require('../../data/motorsport.json');
-const { localUrl } = require('../config/config_dev');
+const localUrl = require('../config/config').localUrl;
 const { cloud_name, api_key, api_secret } = require('../config/config');
 const { dateFormat, timeFormat } = require('../helpers/dateFormat');
 
