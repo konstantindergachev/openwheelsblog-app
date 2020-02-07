@@ -1,0 +1,19 @@
+include ../../mixins/pagination
+if !(posts && posts.length)
+  p Здесь ничего нет. Продолжай искать...
+else
+  section.content
+    -for(let i = 0; i < posts.length && dateAndTime.length; i++)
+      article.post(class= `post-${i}`)
+        .post__image
+          a.post__link(href=`/post/${posts[i]._id}`)
+            img.post__pic(src=`${posts[i].photo}`, alt='фото')
+        .post__descr
+          a.post__link(href=`/post/${posts[i]._id}`)
+            h2.post__title #{posts[i].title}
+            p.post__text #{posts[i].text}
+        .post__date
+          time.date #{dateAndTime[i].date}&nbsp;
+          time.time #{dateAndTime[i].time}
+          p.user автор: #{posts[i].user}
+      +pagination(page, pages, count)

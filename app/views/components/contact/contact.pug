@@ -1,0 +1,39 @@
+section.contact
+  article.contact__info
+    h1.post__title.contact__title Обратная связь
+    .contact__address
+      h3.contact__subtitle Адрес
+      ul.address__list
+        li.address__item
+          svg.contact__link-svg
+            use.contact__link-img(xlink:href="/img/icons/sprite.svg#globe")
+          span Европа - Украина
+        li.address__item
+          svg.contact__link-svg
+            use.contact__link-img(xlink:href="/img/icons/sprite.svg#home")
+          span 61000 Харьков, ул. Клочковская 101-А
+        li.address__item
+          svg.contact__link-svg
+            use.contact__link-img(xlink:href="/img/icons/sprite.svg#email")
+          span dergachevkonstantin@gmail.com
+      h3.contact__subtitle Социальные сети
+      ul.social__list
+        li.social__item
+          a.social__item-link(href='https://www.facebook.com/profile.php?id=100003527152401', alt='facebook' target = '_blank')
+            svg.contact__link-svg
+              use.contact__link-img(xlink:href="/img/icons/sprite.svg#facebook")
+            span Мой Facebook
+        li.social__item
+          a.social__item-link(href='https://github.com/konstantindergachev', alt='github' target = '_blank')
+            svg.contact__link-svg
+              use.contact__link-img(xlink:href="/img/icons/sprite.svg#github")
+            span Мой Github
+    .contact__form
+      h3.contact__subtitle Форма обратной связи
+      form.form(action="send", method="post")
+        input.form__input(type="text" name="email" placeholder="Ваш e-mail")
+        input.form__input(type="text" name="name" placeholder="Ваше name")
+        textarea.form__textarea(name="message", cols="30", rows="10" placeholder="Ваше сообщение")
+        input.form__btn.post__button-archive(type="submit" value="Отправить")
+  include map
+  include ../advertising-horizontal

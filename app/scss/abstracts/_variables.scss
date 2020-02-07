@@ -1,0 +1,66 @@
+:root {
+  --header-height: 90px;
+  --footer-height: 90px;
+  /*---------- 'FONT' ----------*/
+  --fa-font-path: "fonts";
+  --default-font-size: 1.6rem;
+  /*---------- 'COLORS' ----------*/
+  --site-background: #0b192f;
+  --site-color: #ffffff;
+  --header-footer-bcg: #162b4d;
+  --menu-item-hover: #283d5f;
+  --login-footer-color: #637693;
+  --post-title-subtitle: #000000;
+  --post-title-color: #ffffff;
+  --post-text-color: #000000;
+  --post-sec-1: #36486b;
+  --post-sec-2: #50394c;
+  --post-sec-3: #4682b4;
+  --blockquote-text-border: #637693;
+  --advertising-bcg: #ffffff;
+  --about-formula-bcg: #ffffff;
+  --history-bcg: #ffffff;
+  --history-author: #000000;
+  --history-text-color: #000000;
+  --contact-bcg: #ffffff;
+  --contact-title-color: #0b192f;
+  --contact-subtitle-color: #0b192f;
+  --contact-address-link-color: #637693;
+  --contact-social-color: #637693;
+  --contact-svg-bcg: #0b192f;
+  --contact-svg-color: #ffffff;
+  --contact-form-input-bcg: #f5f5f5;
+  --contact-form-input-border: #e0e0e0;
+  --sidebar-desc-bcg: #ffffff;
+  --sidebar-desc-color: #000000;
+  --sidebar-link-color: #0b192f;
+  --sidebar-text-color: #637693;
+  --sidebar-border-bottom: #e0e0e0;
+  --pagination-bcg: #162b4d;
+  --pagination-text-color: #ffffff;
+  --upload-photo-bcg: #ff6347;
+  --upload-photo-color: #ffffff;
+  --comments-color: #637693;
+  --upload-form-color: #0b192f;
+  --upload-form-outline: #ff6347;
+  --upload-form-btn-bcg: #ffffff;
+  --hover-sidebar-bcg: #162b4d;
+  --hover-sidebar-color: #ffffff;
+  --hover-contact-svg-bcg: #637693;
+  --hover-contact-svg-fill: #0b192f;
+  --hover-upload-form-btn-bcg: #ffffff;
+  --hover-pagination-bcg: #ffffff;
+  --hover-pagination-text-color: #162b4d;
+  --btn-top-bcd: #feb236;
+  --error-color: #ff0000;
+  --error-bcg-color: #ffffff;
+  // --shadow: rgba(--color-black, .15);
+  --shadow: 0 2px 5px 0 rgba(0, 0, 0, .25), 0 2px 10px 0 rgba(0, 0, 0, .20);
+  --shadow-2: 0 3px 10px 0 rgba(0, 0, 0, .25), 0 5px 18px 0 rgba(0, 0, 0, .20);
+  --shadow-3: 0 16px 32px rgba(0, 0, 0, 0.4);
+  /*---------- 'GRID' ----------*/
+  --grid-width: 114rem;
+  --gap-vertical: 8rem;
+  --gap-vertical-small: 6rem;
+  --gap-horizontal: 6rem;
+}

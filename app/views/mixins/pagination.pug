@@ -1,0 +1,10 @@
+mixin pagination(page, pages, count)
+  .pagination
+    .pagination__prev
+      if page > 1
+        a.pagination__prev-link(href=`/blogs/page/${page - 1}`) &#x2039;
+    .pagination__text
+      p Cтраница #{page} из #{pages} - всего результатов #{count}
+    .pagination__next
+      if page < pages
+        a.pagination__next-link(href=`/blogs/page/${parseFloat(page) + 1}`) &#x203A;

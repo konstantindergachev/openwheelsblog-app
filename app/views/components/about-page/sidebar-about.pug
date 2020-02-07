@@ -1,0 +1,17 @@
+include ../../mixins/sidebar-posts
+aside.sidebar
+  if !(posts && posts.length)
+    p На сегодня новостей нет. Продолжай искать...
+  .sidebar__news
+    .sidebar__descr.sidebar__descr-960
+      if (pageID === 'about')
+        - const onlyThreePosts = posts.slice(0, 3)
+          each key in onlyThreePosts
+            +sidebar-posts(key._id, key.title, key.text)
+      else if (pageID === 'history')
+        - const onlyThreePosts = posts.slice(0, 16)
+          each key in onlyThreePosts
+            +sidebar-posts(key._id, key.title, key.text)
+  .sidebar__news
+    .sidebar__advertising
+      a.sidebar__advertising-link(href='https://burger-a499f.firebaseapp.com/', alt='приложение бутерброд' target = '_blank') Вкусный бутерброд по вкусным ценам

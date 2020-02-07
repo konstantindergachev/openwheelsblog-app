@@ -1,0 +1,11 @@
+aside.sidebar
+  aside.sidebar
+  if !(newsForSidebar && newsForSidebar.length)
+    p На сегодня новостей нет.
+  .sidebar__news
+    each key in newsForSidebar
+      img.sidebar__img(src=`${key.img}`, alt='News 1')
+      .sidebar__descr
+        a.sidebar__link(href=`${key.url}` target = '_blank')
+          h3.sidebar__title #{key.title}
+  include ../advertising-vertical

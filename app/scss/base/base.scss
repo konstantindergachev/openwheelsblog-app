@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--site-background);
+  color: var(--site-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  @include resp(490) {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+  @include resp(1160) {
+    margin: 0 20px;
+  }
+  @include resp(490) {
+    width: 95%;
+    margin: 0 5px;
+    overflow-x: hidden;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s ease-out;
+    @include resp(960) {
+      flex-direction: column;
+    }
+  }
+}
+
+.date,
+.month,
+.year,
+.time,
+.user {
+  opacity: 0.3;
+}
+.time {
+  @include resp(490) {
+    flex-grow: 2;
+  }
+}
+
+.post__btn {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.tnx__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - (var(--footer-height) + var(--header-height) + 40px));
+}

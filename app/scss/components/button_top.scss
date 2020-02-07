@@ -1,0 +1,60 @@
+.btn__top {
+  position: fixed;
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 93%;
+  right: 2%;
+  background-color: var(--btn-top-bcd);
+  border-radius: 50%;
+  z-index: 1000;
+  transition: all .3s ease-out;
+  &:hover {
+    background-color: var(--site-color);
+    .btn__top-link {
+      color: var(--btn-top-bcd);
+    }
+  }
+  @include resp(1024) {
+    top: 90%;
+    right: 1%;
+  }
+  @include resp(768) {
+    top: 90%;
+    right: 3%;
+  }
+  @include resp(490) {
+    top: 82%;
+    right: 4%;
+    overflow: hidden;
+  }
+  &-link {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--site-color);
+  }
+}
+[tooltip]:hover::after {
+  content: 'Вверх';
+  position: relative;
+  display: inline-block;
+  padding: 4px 8px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  top: 10px;
+  right: 20px;
+  white-space: nowrap;
+  border-radius: 5px;
+  color: var(--site-color);
+  background-color: var(--btn-top-bcd);
+  box-shadow: var(--shadow);
+}
+
+.hidden {
+  opacity: 0;
+}

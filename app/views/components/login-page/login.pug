@@ -1,0 +1,11 @@
+section.centered__form
+  .centered__form-wrapper
+    include ../flash-message
+    form.form(name='loginForm' method="POST" action="/login")
+      .form__field
+        h3.post__title Вход
+      .form__field
+        input#login.form__control(type='text', name='username', autofocus='', placeholder='Имя' tabindex='1')
+      .form__field
+        input#password.form__control(type='password', name='password', placeholder='Пароль' tabindex='2')
+      button#btn.form__btn(type='submit' tabindex='3') Войти

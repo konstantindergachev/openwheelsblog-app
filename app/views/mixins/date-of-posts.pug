@@ -1,0 +1,12 @@
+mixin dateOfPosts(post, date, time)
+  .post__archive-wrapper
+    article
+      h1.post__title #{post.title}
+      p.post__text #{post.text}
+    .post__image-archive
+      img(src=`${post.photo}`, alt="фото")
+      a.post__link.post__link-archive(href='#')
+      .post__date-archive.post__date-archive-1
+        time.date #{date}
+        time.time #{time}
+        p.user автор: #{post.user}

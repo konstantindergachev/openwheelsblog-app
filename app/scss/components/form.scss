@@ -1,0 +1,118 @@
+.login__wrapper {
+  width: 100%;
+  height: calc(100vh - (var(--footer-height) + var(--header-height) + 40px));
+  @include resp(490) {
+    height: calc(100vh - (var(--footer-height) + var(--header-height) + 60px));
+  }
+}
+
+.comments {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  &__wrap {
+    padding: 32px 48px 48px;
+    background-color: var(--post-title-color);
+    @include resp(490) {
+      padding: 16px 24px 24px;
+    }
+    @include resp(390) {
+      padding: 12px 16px 16px;
+    }
+  }
+  &__list {
+    width: 100%;
+    color: var(--comments-color);
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  &__item {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-columns: repeat(2, 1fr);
+    grid-template-areas: 'text text' 'author date';
+  }
+  &__text {
+    grid-area: text;
+    margin-bottom: 10px;
+    width: 100%;
+    align-self: flex-start;
+    text-indent: 25px;
+  }
+  &__author,
+  &__date {
+    font-size: 14px;
+  }
+  &__author {
+    grid-area: author;
+    text-align: left;
+    align-self: flex-end;
+  }
+  &__date {
+    grid-area: date;
+    text-align: right;
+    align-self: flex-end;
+  }
+}
+
+.centered__form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-wrapper {
+    width: 100%;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &__field {
+    margin: 0 auto;
+    &-edit {
+      max-width: 700px;
+      width: 100%;
+    }
+  }
+  &__control {
+    padding: 20px 20px;
+    border: 1px solid var(--upload-form-color);
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 14px;
+    color: var(--upload-form-color);
+  }
+  &__control::-webkit-input-placeholder {
+    color: var(--upload-form-color);
+    opacity: 0.7;
+  }
+  &__control:focus {
+    opacity: 1;
+    outline: 3px solid var(--upload-form-outline);
+  }
+  &__btn {
+    text-decoration: none;
+    background: var(--upload-form-btn-bcg);
+    border: 1px solid var(--upload-form-color);
+    color: var(--upload-form-color);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+    padding: 9px 18px;
+    transition: all .2s ease-out;
+    cursor: pointer;
+    &:hover {
+      background: var(--upload-form-color);
+      color: var(--hover-upload-form-btn-bcg);
+    }
+  }
+}

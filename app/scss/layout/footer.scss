@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  min-height: 90px;
+  background: var(--header-footer-bcg);
+  color: var(--login-footer-color);
+  display: flex;
+  margin-top: 20px;
+  padding: 28px;
+  justify-content: space-between;
+  @include resp(960) {
+    flex-direction: column;
+    text-align: center;
+    line-height: 32px;
+  }
+  @include resp(490) {
+    padding: 17px;
+    margin: 0;
+  }
+  @include resp(330) {
+    padding: 14px 0;
+  }
+  &__right-link {
+    color: var(--login-footer-color);
+    text-decoration: none;
+    transition: all .2s ease-out;
+    &:hover,
+    &:active {
+      color: #ffffff;
+      background: var(--site-background);
+      box-shadow: 0 1rem 2rem rgba(#000000, .4);
+    }
+  }
+}

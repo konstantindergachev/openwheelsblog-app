@@ -1,0 +1,7 @@
+mixin comment(post, text, author, dateOfComment, timeOfComment)
+  .comments
+    ul.comments__list
+      li.comments__item
+        p.comments__text= text
+        p.comments__author автор: #{author}
+        time.comments__date дата: #{`${dateOfComment} ${timeOfComment}`}

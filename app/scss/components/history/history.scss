@@ -1,0 +1,55 @@
+.history__post {
+  max-width: 830px;
+  height: 100%;
+  @include resp(960) {
+    width: 100%;
+    text-align: center;
+  }
+}
+.post {
+  &__history {
+    max-width: 830px;
+    height: auto;
+    background-color: var(--history-bcg);
+    display: flex;
+    flex-direction: column;
+    padding: 32px 48px 48px;
+    margin: 0 0 20px;
+    overflow-y: auto;
+    @include resp(490) {
+      padding: 25px;
+    }
+  }
+  &__author,
+  &__source,
+  &__magazine,
+  &__magazine-number,
+  &__history-date {
+    color: var(--history-author);
+    font-size: 12px;
+  }
+  &__source {
+    margin-bottom: 10px;
+  }
+}
+.history__post {
+  &-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: var(--history-text-color);
+  }
+  &-img {
+    max-width: 100%;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  &-text {
+    color: var(--history-text-color);
+    opacity: 1;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 30px;
+  }
+}

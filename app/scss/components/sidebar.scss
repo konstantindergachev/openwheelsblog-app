@@ -1,0 +1,105 @@
+.sidebar {
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  p {
+    text-align: center;
+  }
+  @include resp(960) {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  @include resp(390) {
+  }
+  &__news {
+    margin-bottom: 20px;
+    @include resp(760) {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    border: 0;
+    width: 100%;
+    height: auto;
+    @include resp(960) {
+      max-width: 100%;
+    }
+    @include resp(760) {
+      max-width: 100%;
+    }
+  }
+  &__descr {
+    text-align: left;
+    background-color: var(--sidebar-desc-bcg);
+    color: var(--sidebar-desc-color);
+    padding: 32px;
+    @include resp(960) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    text-align: center;
+    color: var(--sidebar-link-color);
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    transition: all .3s ease-out;
+    &:hover {
+      color: var(--hover-sidebar-color);
+      background-color: var(--hover-sidebar-bcg);
+      box-shadow: var(--shadow-3);
+    }
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: var(--sidebar-text-color);
+  }
+  &__advertising {
+    width: 100%;
+    background-color: var(--upload-photo-bcg);
+    padding: 32px;
+    text-align: center;
+    transition: .3s ease-out;
+    &:hover {
+      background-color: var(--site-color);
+      .sidebar__advertising-link {
+        color: var(--upload-photo-bcg);
+      }
+    }
+    &-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--site-color);
+      @include resp(960) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.latest__posts {
+  display: block;
+  text-decoration: none;
+  color: var(--sidebar-link-color);
+  &-title {
+    text-align: center;
+  }
+}
+
+.latest__posts:not(:last-child) {
+  border-bottom: 1px solid var(--sidebar-border-bottom);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,20 @@
+section.centered__form
+  -const idName = ['name', 'email', 'password'];
+  -const attrPlaceHold = ['Имя', 'Email', 'Пароль'];
+    .centered__form-wrapper
+      form.form(name='regForm' method="POST" action="/signup")
+        h3.post__title Регистрация
+        if(err)
+          -for(let i = 0; i < idName.length && i < attrPlaceHold.length && i < err.length; i++)
+            .form__field
+              label.error= err[i].msg
+              input.form__control(type='text', id=idName[i] name=idName[i], autofocus='', placeholder=attrPlaceHold[i], tabindex=i)
+          button#submit.form__btn(type='submit') Отправить
+        else
+          .form__field
+            input#name.form__control(type='text', name='username', autofocus='', placeholder='Имя', tabindex='1')
+          .form__field
+            input#email.form__control(type='email', name='email', placeholder='Email', tabindex='2')
+          .form__field
+            input#password.form__control(type='password', name='password', placeholder='Пароль', tabindex='3')
+          button#submit.form__btn(type='submit') Отправить

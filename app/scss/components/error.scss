@@ -1,0 +1,23 @@
+.wrapper__error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.error__message {
+  margin-top: 20px;
+  text-align: center;
+}
+.link__return {
+  display: block;
+  text-align: center;
+  color: var(--site-color);
+  text-decoration: none;
+  border: 1px solid var(--site-color);
+  margin-top: 20px;
+  transition: all .3s ease-out;
+  &:hover {
+    background-color: var(--site-color);
+    color: var(--site-background);
+  }
+}

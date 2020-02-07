@@ -1,0 +1,69 @@
+.single__post {
+  max-width: 830px;
+  width: 100%;
+  height: 100%;
+  @include resp(960) {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+.post {
+  &__about {
+    max-width: 830px;
+    background-color: var(--about-formula-bcg);
+    display: flex;
+    flex-direction: column;
+    padding: 32px 48px 48px;
+    margin: 0 0 20px;
+    @include resp(960) {
+      max-width: 100%;
+    }
+    @include resp(490) {
+      padding: 25px;
+    }
+  }
+  &__subtitle {
+    color: var(--post-title-subtitle);
+    font-size: 32px;
+    font-weight: 100;
+    margin: 6px 0;
+    text-align: center;
+  }
+}
+.single__post {
+  &-title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 30px;
+    color: var(--post-title-subtitle);
+    @include resp(490) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+  &-img {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &-text {
+    color: var(--post-text-color);
+    opacity: 1;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 30px;
+  }
+}
+.blockquote {
+  border-left: 2px solid var(--blockquote-text-border);
+  color: var(--blockquote-text-border);
+  font-family: georgia;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 0 20px 15px;
+  padding-left: 11px;
+}

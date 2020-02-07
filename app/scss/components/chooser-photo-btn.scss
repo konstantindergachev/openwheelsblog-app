@@ -1,0 +1,23 @@
+.hide {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.upload__photo {
+  display: block;
+  cursor: pointer;
+  padding: 10px 30px;
+  background-color: var(--upload-photo-bcg);
+  color: var(--upload-photo-color);
+  box-shadow: var(--shadow);
+  border-radius: 2px;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  &:hover {
+    box-shadow: var(--shadow-2);
+  }
+}

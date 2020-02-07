@@ -1,0 +1,29 @@
+header.header
+  nav.nav
+    .nav__logo
+      //- a.logo(href='/') Блог о Формуле 1
+      img.nav__logo-img(src="/img/icons/formula_1.svg", alt="formula 1")
+    .nav__text
+      svg.nav__text-svg
+        use.nav__text-img(xlink:href="/img/icons/sprite.svg#menu")
+    ul.nav__menu-list
+      li.nav__menu-item
+        a.nav__menu-link(href='/') Новости
+      li.nav__menu-item
+        a.nav__menu-link(href='/about') О формуле 1
+      li.nav__menu-item
+        a.nav__menu-link(href='/history') История гонок
+      li.nav__menu-item
+        a.nav__menu-link(href='/contact') Контакты
+    ul.login
+      if !user
+        li.login__item
+          a.login__link(href='/login') Войти
+        li.login__item
+          a.login__link(href='/signup') Регистрация
+      else
+        span.login__name=user.username
+        li.login__item
+          a.login__link(href="/post/create") Новая запись
+        li.login__item
+          a.login__link(href='/logout') Выход

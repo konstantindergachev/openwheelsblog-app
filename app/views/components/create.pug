@@ -1,0 +1,18 @@
+-const action = post ? `/post/edit/${post._id}` : `/post/create`;
+-const enctype = post ? `multipart/form-data` : `multipart/form-data`;
+-const title = post ? post.title : '';
+-const text = post ? post.text : '';
+section.centered__form
+  .centered__form-wrapper
+    include ../components/flash-message
+    form.form.edit__form(name='postForm' method="POST" action= action enctype= enctype)
+      h3.post__title Ваш пост #{user.username}
+      .form__field.form__field-edit
+        input#title.form__control(type='text', name='title', autofocus='', value= title, placeholder='Заголовок' tabindex='1')
+      .form__field.form__field-edit
+        textarea.form__control(cols="30", rows="10" name='text', placeholder='Ваш текст' tabindex='2')= text
+      .form__field
+        input#photo.hide(type="file" name="photo" accept="image/jpeg,image/png,image/gif")
+        label.upload__photo(for="photo")
+          span Фото
+      button#btn.form__btn(type='submit' tabindex='2') Сохранить

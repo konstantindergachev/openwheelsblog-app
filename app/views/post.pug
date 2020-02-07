@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  include layout/header
+  if user
+    if post
+      .wrapper__inner
+        include components/onepost-page/onepost
+        //- include components/onepost-page/sidebar-post
+        include components/blog-page/sidebar-blog
+    else if !post
+      .login__wrapper
+        include components/create
+    else if pageID === 'edit'
+      include components/create
+  else if post
+    .wrapper__inner
+      include components/onepost-page/onepost
+      include components/blog-page/sidebar-blog
+  include layout/footer

@@ -1,0 +1,14 @@
+doctype html
+html(lang='ru-Ru')
+  head
+    title= pageTitle
+    include layout/head
+  body(id= `${pageID}`)
+    #wrapper.wrapper
+      block content
+    if (pageID !== 'error')
+      include components/js-all-pages
+    if (pageID === 'edit' || pageID === 'create__record')
+      include components/js-post-form
+    if (pageID === 'history')
+      include components/js-history-page

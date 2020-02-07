@@ -1,0 +1,13 @@
+footer.footer
+  .footer__left
+    p.footer__right-text Харьков, Украина. Copyright &copy; #{new Date().toISOString().split('-')[0]}
+  ul.nav__menu-list
+    .nav__menu-item.social
+      a.social__link(href='https://www.facebook.com/profile.php?id=100003527152401' target='_blank')
+        svg.social__link-svg
+          use.social__link-img(xlink:href="/img/icons/sprite.svg#facebook")
+      a.social-link(href='https://github.com/konstantindergachev' target='_blank')
+        svg.social__link-svg
+          use.social__link-img(xlink:href="/img/icons/sprite.svg#github")
+  .footer__right Сайт разработан &thinsp;
+    a.footer__right-link(href='https://github.com/konstantindergachev' target='_blank') Константином Дергачевым

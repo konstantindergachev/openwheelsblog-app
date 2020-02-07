@@ -1,0 +1,1 @@
+web: npm run grab; node app/server.js

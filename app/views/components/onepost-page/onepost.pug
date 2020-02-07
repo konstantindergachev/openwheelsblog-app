@@ -1,0 +1,21 @@
+include ../../mixins/date-of-posts
+include ../../mixins/comment
+block content
+  section.single__post
+    +dateOfPosts(post, date, time)
+    if comments.length > 0
+      .comments__wrap
+        -for(let i = 0; i < comments.length && i < dateAndTimeOfComments.length; i++)
+            +comment(post, comments[i].text, comments[i].author, dateAndTimeOfComments[i].date, dateAndTimeOfComments[i].time)
+    if user
+      if (user.username == post.user && pageID !== 'edit')
+        span.post__btn
+          a.form__btn(href=`/post/edit/${post._id}`) Редактировать
+          a.form__btn(href=`/post/remove/${post._id}`) Удалить
+      else if (pageID !== 'edit')
+        form.form.comments__form(method='POST' action=`/post/comment/${post._id}`)
+          textarea.form__control.comments__form-control(name="text", cols="30", rows="10" placeholder="Напишите свой комментарий")
+          button#btn.form__btn.comments__form-btn(type='submit') Сохранить
+    if pageID === 'edit'
+      include ../create
+    include ../advertising-horizontal
