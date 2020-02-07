@@ -30,6 +30,8 @@ app.use(express.static(path.join(__dirname, './public')));
 app.use(
   session({
     secret: 'secret',
+    saveUninitialized: true,
+    resave: true,
     cookie: { maxAge: 86400000 },
     store: new MemoryStore({
       checkPeriod: 86400000, // prune expired entries every 24h
