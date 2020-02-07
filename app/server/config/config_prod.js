@@ -1,7 +1,6 @@
 module.exports = {
   localPort: process.env.LOCALPORT,
   herokuDepl: process.env.HEROKUDEPL,
-  mapApiKey: process.env.MAPAPIKEY,
   localUrl: process.env.LOCALURL,
   cloud_name: process.env.CLOUDNAME,
   api_key: process.env.APIKEY,
