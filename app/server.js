@@ -5,9 +5,9 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
 const mongoose = require('mongoose');
-const db = require('./server/config/config_dev').herokuDepl;
+const db = require('./server/config/config').herokuDepl;
 
-const { localPort } = require('./server/config/config_dev');
+const localPort = require('./server/config/config').localPort;
 
 const app = express();
 
