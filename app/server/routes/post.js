@@ -52,10 +52,10 @@ const createPost = async (req, res) => {
       photo: result.secure_url,
       photoId: result.public_id,
     }).save();
-    fs.unlink(`${localUrl}${fileName}`, function(err) {
-      if (err) console.log('Ошибка удаления файла для создания поста: ', err);
-      console.log('Временный файл успешно удалён');
-    });
+    // fs.unlink(`${localUrl}${fileName}`, function(err) {
+    //   if (err) console.log('Ошибка удаления файла для создания поста: ', err);
+    //   console.log('Временный файл успешно удалён');
+    // });
     res.redirect(`/`);
   } catch (err) {
     console.log('Ошибка создания нового поста: ', err);
