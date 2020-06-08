@@ -4,20 +4,17 @@
   "description": "A simple search application in Node and Express hosted on Heroku",
   "main": "app/server.js",
   "author": "Konstantin Dergachev",
-  "keywords": [
-    "blog",
-    "formula"
-  ],
+  "keywords": [ "blog", "formula" ],
   "license": "MIT",
   "scripts": {
     "grab": "node app/server/graber/graber.js",
-    "scss": "node-sass app/scss/main.scss app/public/css/style.css --output-style compressed --watch",
+    "scss": "node-sass --output-style compressed app/scss/main.scss > app/public/css/style.css",
     "dev": "nodemon app/server.js -e pug,js,scss,css",
     "watch": "concurrently --names \"dev,scss,grab\" \"npm run dev\" \"npm run scss\" \"npm run grab\"",
     "start": "node app/server.js"
   },
   "engine": {
-    "node": "13.7.0"
+    "node": "14.3.0"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -33,7 +30,7 @@
     "memorystore": "^1.6.1",
     "mongoose": "^5.8.11",
     "mongoose-lifecycle": "^1.0.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "nodemailer": "^6.4.2",
     "passport": "^0.4.1",
     "passport-http": "^0.3.0",
