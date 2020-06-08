@@ -1,5 +1,5 @@
 .content {
-  max-width: 830px;
+  max-width: 51.875rem;
   width: 100%;
   height: 100%;
   display: grid;
@@ -69,7 +69,7 @@
     }
   }
   &__descr {
-    padding: 20px;
+    padding: 1.25rem;
     @include resp(760) {
       width: 100%;
       text-align: center;
@@ -77,37 +77,37 @@
   }
   .not-img {
     width: 90%;
-    padding-bottom: 36px;
+    padding-bottom: 2.25rem;
   }
   &__title,
   &__text {
     color: var(--about-formula-bcg);
   }
   &__title {
-    font-size: 52px;
-    line-height: 52px;
+    font-size: 3.25rem;
+    line-height: 3.25rem;
     font-weight: 100;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     transition: all .3s ease-out;
     &:hover {
       opacity: 0.5;
     }
     @include resp(490) {
-      font-size: 32px;
-      line-height: 32px;
+      font-size: 2rem;
+      line-height: 2rem;
     }
   }
   &__text {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
-    line-height: 23px;
+    line-height: 1.4375rem;
     text-align: justify;
-    text-indent: 25px;
+    text-indent: 1.5625rem;
     opacity: 0.6;
   }
   &__date {
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
     font-weight: 100;
     text-align: center;
     width: 15%;
@@ -120,13 +120,13 @@
       justify-content: space-around;
     }
     @include resp(490) {
-      padding: 0 20px 20px;
+      padding: 0 1.25rem 1.25rem;
     }
     &-archive {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 20px;
+      margin-top: 1.25rem;
       @include resp(960) {
         align-items: center;
         justify-content: center;
@@ -135,7 +135,7 @@
   }
   &__link {
     display: block;
-    min-width: 200px;
+    min-width: 12.5rem;
     text-decoration: none;
     color: var(--post-title-color);
     @include resp(490) {
@@ -153,14 +153,14 @@
     }
 
     article {
-      padding: 32px 48px 48px;
+      padding: 2rem 3rem 3rem;
       margin: 0 0 20px;
       @include resp(490) {
-        padding-right: 24px;
-        padding-left: 24px;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
       }
       @include resp(390) {
-        padding: 12px 16px 16px;
+        padding: 0.75rem 1rem 1rem;
       }
     }
   }
@@ -170,9 +170,9 @@
   display: inline-block;
 }
 .date {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .time {
   display: block;
-  font-size: 18px;
+  font-size: 1.125rem;
 }

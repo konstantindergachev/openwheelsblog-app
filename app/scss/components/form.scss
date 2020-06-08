@@ -1,8 +1,8 @@
 .login__wrapper {
   width: 100%;
-  height: calc(100vh - (var(--footer-height) + var(--header-height) + 40px));
+  height: calc(100vh - (var(--footer-height) + var(--header-height) + 2.5rem));
   @include resp(490) {
-    height: calc(100vh - (var(--footer-height) + var(--header-height) + 60px));
+    height: calc(100vh - (var(--footer-height) + var(--header-height) + 3.75rem));
   }
 }
 
@@ -11,26 +11,26 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   &__wrap {
-    padding: 32px 48px 48px;
+    padding: 2rem 3rem 3rem;
     background-color: var(--post-title-color);
     @include resp(490) {
-      padding: 16px 24px 24px;
+      padding: 1rem 1.5rem 1.5rem;
     }
     @include resp(390) {
-      padding: 12px 16px 16px;
+      padding: 0.75rem 1rem 1rem;
     }
   }
   &__list {
     width: 100%;
     color: var(--comments-color);
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     text-align: left;
   }
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     display: grid;
     grid-template-rows: auto;
     grid-auto-columns: repeat(2, 1fr);
@@ -38,14 +38,14 @@
   }
   &__text {
     grid-area: text;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     width: 100%;
     align-self: flex-start;
-    text-indent: 25px;
+    text-indent: 1.5625rem;
   }
   &__author,
   &__date {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   &__author {
     grid-area: author;
@@ -77,17 +77,17 @@
   &__field {
     margin: 0 auto;
     &-edit {
-      max-width: 700px;
+      max-width: 43.75rem;
       width: 100%;
     }
   }
   &__control {
-    padding: 20px 20px;
+    padding: 1.25rem 1.25rem;
     border: 1px solid var(--upload-form-color);
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     outline: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--upload-form-color);
   }
   &__control::-webkit-input-placeholder {
@@ -104,10 +104,10 @@
     border: 1px solid var(--upload-form-color);
     color: var(--upload-form-color);
     display: inline-block;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     height: auto;
-    padding: 9px 18px;
+    padding: 0.5625rem 1.125rem;
     transition: all .2s ease-out;
     cursor: pointer;
     &:hover {

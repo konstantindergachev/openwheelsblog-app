@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 body {
@@ -24,15 +24,15 @@ body {
 }
 
 .wrapper {
-  max-width: 1120px;
+  max-width: 70rem;
   height: 100vh;
   margin: 0 auto;
   @include resp(1160) {
-    margin: 0 20px;
+    margin: 0 1.25rem;
   }
   @include resp(490) {
     width: 95%;
-    margin: 0 5px;
+    margin: 0 0.3125rem;
     overflow-x: hidden;
   }
   &__inner {
@@ -60,12 +60,12 @@ body {
 
 .post__btn {
   text-align: right;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .tnx__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - (var(--footer-height) + var(--header-height) + 40px));
+  height: calc(100vh - (var(--footer-height) + var(--header-height) + 2.5rem));
 }

@@ -1,21 +1,21 @@
 .pagination {
-  height: 100px;
+  height: 6.25rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 16px 0;
+  margin: 1rem 0;
   background-color: var(--pagination-bcg);
   grid-area: pagination;
   &__next {
     flex: 0 0 auto;
-    padding-right: 48px;
+    padding-right: 3rem;
     &-link {
       color: var(--pagination-text-color);
       text-decoration: none;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
       outline: 1px solid var(--pagination-text-color);
-      padding: 0 10px;
+      padding: 0 0.625rem;
       transition: all 0.3s ease-in-out;
       &:hover {
         color: var(--pagination-bcg);
@@ -26,18 +26,18 @@
   }
   &__prev {
     flex: 0 0 auto;
-    padding-left: 48px;
+    padding-left: 3rem;
     @include resp(540) {
-      padding-left: 24px;
+      padding-left: 1.5rem;
     }
     &-link {
       position: relative;
       color: var(--pagination-text-color);
       text-decoration: none;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
       outline: 1px solid var(--pagination-text-color);
-      padding: 0 10px;
+      padding: 0 0.625rem;
       transition: all 0.3s ease-in-out;
       &:hover {
         color: var(--pagination-bcg);
@@ -51,15 +51,15 @@
     padding: 1rem;
     text-align: center;
     font-family: inherit;
-    line-height: 23px;
+    line-height: 1.4375rem;
     @include resp(540) {
       padding: 0;
     }
     p {
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 100;
       @include resp(540) {
-        font-size: 12px;
+        font-size: 0.75rem;
       }
       color: var(--pagination-text-color);
     }

@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%);
 }
 .error__message {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   text-align: center;
 }
 .link__return {
@@ -14,7 +14,7 @@
   color: var(--site-color);
   text-decoration: none;
   border: 1px solid var(--site-color);
-  margin-top: 20px;
+  margin-top: 1.25rem;
   transition: all .3s ease-out;
   &:hover {
     background-color: var(--site-color);

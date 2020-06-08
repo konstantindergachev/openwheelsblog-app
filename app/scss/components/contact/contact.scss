@@ -2,8 +2,8 @@
   width: 100%;
   &__info {
     background-color: var(--contact-bcg);
-    padding: 32px 48px 48px;
-    margin-bottom: 20px;
+    padding: 2rem 3rem 3rem;
+    margin-bottom: 1.25rem;
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
@@ -27,7 +27,7 @@
     flex-direction: column;
     width: 100%;
     @include resp(760) {
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
       text-align: center;
     }
   }
@@ -45,19 +45,19 @@
       &__textarea {
         background: var(--contact-form-input-bcg);
         border: 1px solid var(--contact-form-input-border);
-        padding: 0.625em;
+        padding: 0.625rem;
         width: 100%;
         font-family: 'Roboto', sans-serif;
       }
       &__input {
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 0.875rem;
+        line-height: 0.875rem;
         font-weight: 400;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
       }
       &__textarea {
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 1rem;
+        line-height: 1rem;
         font-weight: 300;
       }
       &__btn {
@@ -66,11 +66,11 @@
     }
   }
   &__subtitle {
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.1875rem;
     color: var(--contact-subtitle-color);
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     @include resp(760) {
       text-align: center;
     }
@@ -81,20 +81,20 @@
 .social__list {
   list-style: none;
   @include resp(430) {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
 .address__list {
   color: var(--contact-address-link-color);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .address__item,
 .social__item {
   display: flex;
   align-items: center;
-  margin-bottom: 2px;
+  margin-bottom: 0.125rem;
 }
 
 .social__item-link {
@@ -105,14 +105,14 @@
 }
 .contact__link-svg {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   border-radius: 50%;
-  padding: 6px;
+  padding: 0.375rem;
   background: var(--contact-svg-bcg);
   fill: var(--contact-svg-color);
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   &:hover {
     background-color: var(--hover-contact-svg-bcg);
     fill: var(--hover-contact-svg-fill);
@@ -123,10 +123,10 @@
   grid-area: map;
   display: flex;
   position: relative;
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 
 iframe {
   width: 100%;
-  height: 454px;
+  height: 28.375rem;
 }

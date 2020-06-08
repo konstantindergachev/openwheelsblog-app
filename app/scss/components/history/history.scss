@@ -1,5 +1,5 @@
 .history__post {
-  max-width: 830px;
+  max-width: 51.875rem;
   height: 100%;
   @include resp(960) {
     width: 100%;
@@ -8,16 +8,16 @@
 }
 .post {
   &__history {
-    max-width: 830px;
+    max-width: 51.875rem;
     height: auto;
     background-color: var(--history-bcg);
     display: flex;
     flex-direction: column;
-    padding: 32px 48px 48px;
-    margin: 0 0 20px;
+    padding: 2rem 3rem 3rem;
+    margin: 0 0 1.25rem;
     overflow-y: auto;
     @include resp(490) {
-      padding: 25px;
+      padding: 1.5625rem;
     }
   }
   &__author,
@@ -26,30 +26,30 @@
   &__magazine-number,
   &__history-date {
     color: var(--history-author);
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   &__source {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 }
 .history__post {
   &-title {
-    font-size: 48px;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    margin-bottom: 1.875rem;
     color: var(--history-text-color);
   }
   &-img {
     max-width: 100%;
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
   &-text {
     color: var(--history-text-color);
     opacity: 1;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.625rem;
     text-align: justify;
-    text-indent: 20px;
-    margin-bottom: 30px;
+    text-indent: 1.25rem;
+    margin-bottom: 1.875rem;
   }
 }
